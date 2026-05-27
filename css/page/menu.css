@@ -73,6 +73,7 @@
             padding:10px 0px;
             background-color: var(--light-yellow);
             border-bottom:1px solid black;
+            font-family:"Noto Sans JP" , sans-serif;
         }
         img{
             display: block;

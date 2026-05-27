@@ -111,6 +111,7 @@
 					color: black;
 					text-decoration: none;
 					transition: background-color 0.3s;
+					font-family:"Noto Sans JP" , sans-serif;
 					&:hover{
 						background-color: #555;
 						color:white;
@@ -149,6 +150,7 @@
 			opacity:0.9;
 			.copyright{
 				color: black;
+				font-family:"Noto Sans JP" , sans-serif;
 			}
 		}
 	}
