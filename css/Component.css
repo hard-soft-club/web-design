@@ -116,16 +116,44 @@
     .ranked-dish-container{
         /*10pxはgapより*/
         flex: 0 0 calc((100% - (2*10px)) / 3);
-        border:6px solid var(--light-yellow);
         outline:1px solid black;
         counter-increment: rank;
+        &:nth-child(1){
+            border:10px ridge gold;
+            background-color: color-mix(in oklab, gold 30%, #FFFFFF 100%) ;
+            .dish-name::before{
+                color:gold;
+            }
+        }
+        &:nth-child(2){
+            border:10px ridge silver;
+            background-color: color-mix(in oklab, silver 30%, #FFFFFF 100%) ;
+            .dish-name::before{
+                color:silver;
+            }
+
+        }
+
+        &:nth-child(3){
+            border:10px ridge darkorange;
+            background-color: color-mix(in oklab, darkorange 30%, #FFFFFF 100%) ;
+            .dish-name::before{
+                color:darkorange;
+            }
+        }
+
+
         .dish-name{
-            background-color: white;
             border-bottom:1px solid black;
             padding:5px;
             font-size:25px;
             &::before{
                 content: counter(rank) "位：";
+                -webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color: black;
+                paint-order: stroke fill;
+                white-space: nowrap;
+
             }
         }
         img{
@@ -134,7 +162,6 @@
         }
         p{
             padding:5px;
-            background-color: white;
             border-top:1px solid black;
         }
     }
